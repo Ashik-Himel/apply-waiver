@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Waiver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="new-waiver-section">
+    <div class="container">
+      <div class="waiver-header">
+        <h2>New Waiver</h2>
+        <div class="breadcrumbs">
+          <a href="#">Dashboard</a> &gt;
+          <a href="#">Accounting</a> &gt;
+          <a href="#">Waiver</a> &gt;
+          <span>New Waiver</span>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card-wrapper">
+          <div class="card">
+            <h4>Search</h4>
+            <form action="" method="post">
+              <input type="text" name="search" id="search" placeholder="Search Student ID - Name - Roll - Class - Section - Group">
+              <label for="student-id">Student ID <span>*</span></label>
+              <input type="number" name="student-id" id="student-id" placeholder="Student ID" required>
+              <input type="submit" value="Search">
+            </form>
+          </div>
+        </div>
+        <div class="card-wrapper student-info">
+          <div class="card">
+            <h4>Student Information</h4>
+            <div class="card-flex">
+              <div>
+                <img src="images/student.jpg" alt="Student">
+              </div>
+              <div class="card-info-flex">
+                <div class="right-align">
+                  <p>Student Name:</p>
+                  <p>Father's Name:</p>
+                  <p>Class:</p>
+                  <p>Group:</p>
+                  <p>Shift:</p>
+                  <p>Section:</p>
+                  <p>Roll No:</p>
+                  <p>Year:</p>
+                </div>
+                <div class="left-align">
+                  <p>Nabid Hasan</p>
+                  <p>MD Nurul Islam</p>
+                  <p>Six</p>
+                  <p>None</p>
+                  <p>Day</p>
+                  <p>A</p>
+                  <p>1</p>
+                  <p>2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-3">
+        <h4>Waiver Information</h4>
+        <form action="" method="post">
+          <div>
+            <label for="fees-head">Fees Head <span>*</span></label>
+            <select name="fees-head" id="fees-head" required>
+              <option value="search">Search</option>
+              <option value="option-1">Option 1</option>
+              <option value="option-2">Option 2</option>
+              <option value="option-3">Option 3</option>
+            </select>
+          </div>
+          <div>
+            <label for="months">Months <span>*</span></label>
+            <select name="months" id="months">
+              <option value="select">Select Option</option>
+              <option value="option-1">Option 1</option>
+              <option value="option-2">Option 2</option>
+              <option value="option-3">Option 3</option>
+            </select>
+          </div>
+          <div>
+            <label for="waiver">Waiver <span>*</span></label>
+            <select name="waiver" id="waiver">
+              <option value="select">Percentage</option>
+              <option value="20">20%</option>
+              <option value="30">30%</option>
+              <option value="50%">50%</option>
+            </select>
+          </div>
+          <main class="submit-wrapper">
+            <input type="submit" value="Submit">
+          </main>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
