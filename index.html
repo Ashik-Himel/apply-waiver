@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Waiver</title>
+  <title>Apply Waiver</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <section class="new-waiver-section">
-    <div class="container">
-      <div class="waiver-header">
-        <h2>New Waiver</h2>
-        <div class="breadcrumbs">
-          <a href="#">Dashboard</a> &gt;
-          <a href="#">Accounting</a> &gt;
-          <a href="#">Waiver</a> &gt;
-          <span>New Waiver</span>
-        </div>
-      </div>
 
-      <div class="card-container">
-        <div class="card-wrapper">
-          <div class="card">
-            <h4>Search</h4>
-            <form action="" method="post">
-              <input type="text" name="search" id="search" placeholder="Search Student ID - Name - Roll - Class - Section - Group">
-              <label for="student-id">Student ID <span>*</span></label>
-              <input type="number" name="student-id" id="student-id" placeholder="Student ID" required>
-              <input type="submit" value="Search">
-            </form>
+<body>
+  <main class="apply-waiver">
+    <div class="page-header">
+      <h2>Apply Waiver</h2>
+      <div class="breadcrumbs">
+        <a href="#">Home</a> /
+        <a href="#">Apply Waiver</a>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="search-card">
+        <h3 class="card-header">Search to Apply Waiver</h3>
+        <form>
+          <label for="search-id">Student ID</label>
+          <div class="form-flex">
+            <input type="search" name="search-id" id="search-id" placeholder="Search by id" required>
+            <button type="submit" class="button-primary">Search</button>
           </div>
-        </div>
-        <div class="card-wrapper student-info">
-          <div class="card">
-            <h4>Student Information</h4>
-            <div class="card-flex">
-              <div>
-                <img src="images/student.jpg" alt="Student">
-              </div>
-              <div class="card-info-flex">
-                <div class="right-align">
-                  <p>Student Name:</p>
-                  <p>Father's Name:</p>
-                  <p>Class:</p>
-                  <p>Group:</p>
-                  <p>Shift:</p>
-                  <p>Section:</p>
-                  <p>Roll No:</p>
-                  <p>Year:</p>
-                </div>
-                <div class="left-align">
-                  <p>Nabid Hasan</p>
-                  <p>MD Nurul Islam</p>
-                  <p>Six</p>
-                  <p>None</p>
-                  <p>Day</p>
-                  <p>A</p>
-                  <p>1</p>
-                  <p>2023</p>
-                </div>
-              </div>
+        </form>
+      </div>
+      <div class="info-card">
+        <h3 class="card-header">Student Information</h3>
+        <div class="info-card-body">
+          <div>
+            <img src="images/student.jpg" alt="Student's Photo">
+          </div>
+          <div class="info-container">
+            <div>
+              <span>Student's Name :</span>
+              <span>Nabid Hasan</span>
+            </div>
+            <div>
+              <span>Father's Name :</span>
+              <span>MD Nurul Islam</span>
+            </div>
+            <div>
+              <span>Class :</span>
+              <span>Six</span>
+            </div>
+            <div>
+              <span>Group :</span>
+              <span>None</span>
+            </div>
+            <div>
+              <span>Shift :</span>
+              <span>Day</span>
+            </div>
+            <div>
+              <span>Section :</span>
+              <span>A</span>
+            </div>
+            <div>
+              <span>Roll No :</span>
+              <span>1</span>
+            </div>
+            <div>
+              <span>Year :</span>
+              <span>2023</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="card card-3">
-        <h4>Waiver Information</h4>
-        <form action="" method="post">
+      <div class="waiver-info-card">
+        <h3 class="card-header">Waiver Information</h3>
+        <form>
           <div>
-            <label for="fees-head">Fees Head <span>*</span></label>
-            <select name="fees-head" id="fees-head" required>
+            <label for="fees-head">Fees Head</label>
+            <select name="fees-head" id="fees-head">
               <option value="search">Search</option>
               <option value="option-1">Option 1</option>
               <option value="option-2">Option 2</option>
@@ -77,29 +83,31 @@
             </select>
           </div>
           <div>
-            <label for="months">Months <span>*</span></label>
+            <label for="months">Months</label>
             <select name="months" id="months">
-              <option value="select">Select Option</option>
+              <option value="select">Select</option>
               <option value="option-1">Option 1</option>
               <option value="option-2">Option 2</option>
               <option value="option-3">Option 3</option>
             </select>
           </div>
           <div>
-            <label for="waiver">Waiver <span>*</span></label>
+            <label for="waiver">Waiver</label>
             <select name="waiver" id="waiver">
-              <option value="select">Percentage</option>
-              <option value="20">20%</option>
-              <option value="30">30%</option>
+              <option value="percentage">Percentage</option>
+              <option value="20%">20%</option>
+              <option value="30%">30%</option>
               <option value="50%">50%</option>
             </select>
           </div>
-          <main class="submit-wrapper">
-            <input type="submit" value="Submit">
-          </main>
+          <div>
+            <span></span>
+            <button type="submit" class="button-primary">Submit</button>
+          </div>
         </form>
       </div>
     </div>
-  </section>
+  </main>
 </body>
+
 </html>
